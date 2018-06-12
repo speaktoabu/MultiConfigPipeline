@@ -39,6 +39,7 @@ def createStages(releaseValue) {
             tasks["${axisNodeValue}/${axisToolValue}"] = {
                 try{
                    echo "Do your task here for config ${releaseValue}/${axisNodeValue}/${axisToolValue}"
+			sh "sh stage.sh"
                 } catch (err) {
                     echo "Failed"
                 }
