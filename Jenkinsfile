@@ -2,7 +2,7 @@ def releaseNode = "${RELEASE}".split(',')
 
 stage("checkout") {
     node {
-	git 'https://github.com/speaktoabu/Percona_test.git'
+	git 'https://github.com/speaktoabu/MultiConfigPipeline.git'
     }
 }
 
