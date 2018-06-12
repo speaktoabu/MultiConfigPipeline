@@ -1,6 +1,11 @@
 def releaseNode = "${RELEASE}".split(',')
 
-git 'https://github.com/speaktoabu/Percona_test.git'
+stage("checkout") {
+    node {
+	git 'https://github.com/speaktoabu/Percona_test.git'
+    }
+}
+
 
 stage("Before") {
     node {
