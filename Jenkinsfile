@@ -23,7 +23,7 @@ for(int i=0; i<releaseNode.size();i++){
 
 stage("after") {
     node {
-		sh "end.sh"
+		sh "sh end.sh"
     }
 }
 
