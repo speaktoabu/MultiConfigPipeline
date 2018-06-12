@@ -1,10 +1,10 @@
 def releaseNode = "${RELEASE}".split(',')
 
-git clone https://github.com/speaktoabu/Percona_test.git
+git 'https://github.com/speaktoabu/Percona_test.git'
 
 stage("Before") {
     node {
-		sh "start.sh"
+		sh 'sh start.sh'
     }
 }
 
