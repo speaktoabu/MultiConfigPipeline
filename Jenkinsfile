@@ -4,7 +4,7 @@ git clone https://github.com/speaktoabu/Percona_test.git
 
 stage("Before") {
     node {
-		sh "sh start.sh"
+		sh "start.sh"
     }
 }
 
@@ -18,7 +18,7 @@ for(int i=0; i<releaseNode.size();i++){
 
 stage("after") {
     node {
-		sh "sh end.sh"
+		sh "end.sh"
     }
 }
 
