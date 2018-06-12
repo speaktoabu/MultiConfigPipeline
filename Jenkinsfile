@@ -37,6 +37,7 @@ def createStages(releaseValue) {
         for(int j=0; j< dbNode.size(); j++) {
             def axisToolValue = dbNode[j]
             tasks["${axisNodeValue}/${axisToolValue}"] = {
+		    node {
                 try{
                    echo "Do your task here for config ${releaseValue}/${axisNodeValue}/${axisToolValue}"
 			sh '''ls -ll;
@@ -44,6 +45,7 @@ def createStages(releaseValue) {
                 } catch (err) {
                     echo "Failed"
                 }
+		    }
             }
         }
     }
