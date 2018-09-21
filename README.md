@@ -1,1 +1,1 @@
-The is New test. new commit
+The is New test
